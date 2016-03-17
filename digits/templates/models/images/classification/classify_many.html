@@ -86,7 +86,7 @@
     {% set ground_truth = ground_truths[loop.index0] %}
     <tr>
         <td>{{loop.index}}</td>
-        <td>{{path}}</td>
+        <td><img src="{{path}}"></td>
         {% if show_ground_truth %}<td>{% if ground_truth is not none%}{{ground_truth}}{% endif %}</td>{% endif %}
         {% for r in result %}
         <td align="right">
